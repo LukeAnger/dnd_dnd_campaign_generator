@@ -1,4 +1,3 @@
-// DraggableItem.jsx
 import React from 'react';
 
 const DraggableItem = ({ id, position, onMouseDown, children }) => {
