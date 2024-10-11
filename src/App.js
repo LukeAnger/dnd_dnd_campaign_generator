@@ -5,6 +5,7 @@ import { DragProvider } from './state/store';
 
 const App = () => {
     return (
+        // <div>hi</div>
         <DragProvider>
             <div style={{ display: 'flex', height: '100vh' }}>
                 <AttributeMenu />
