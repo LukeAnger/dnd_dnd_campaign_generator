@@ -58,6 +58,18 @@ const DragContainer = () => {
     };
   }, [isDragging]);
 
+    const addDraggable = (attribute) => {   
+        const newId = `${attribute.id}-${Date.now()}`
+        setDraggables((prev) => [
+            ...prev,
+            {
+                id: newId,
+                text: attribute.text,
+                position: { x: 50, y: 50 }
+            }
+        ])
+    }
+
   return (
     <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
       {draggables.map((draggable) => (
