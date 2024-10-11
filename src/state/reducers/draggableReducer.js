@@ -11,6 +11,7 @@ const draggableReducer = (state = initialState, action) => {
             const newDraggable = {
                 id: newId,
                 text: action.payload.text,
+                color: action.payload.color,
                 position: { x: 50, y: 50 }, // Initial position for new items
             };
             return {

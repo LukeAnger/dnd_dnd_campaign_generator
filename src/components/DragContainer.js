@@ -52,8 +52,7 @@ const DragContainer = () => {
             {state.draggables.map((draggable) => (
                 <DraggableItem
                     key={draggable.id}
-                    id={draggable.id}
-                    position={draggable.position}
+                    draggable={draggable}
                     onMouseDown={handleMouseDown}
                 >
                     {draggable.text}
